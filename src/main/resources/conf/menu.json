@@ -1,0 +1,9 @@
+{
+    "menu": {
+        "start.application": "control S",
+        "quit.application": "control Q"
+    },
+    "help": {
+        "about.application": "F1"
+    }
+}
