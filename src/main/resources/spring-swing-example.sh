@@ -4,7 +4,6 @@ while [ -h "$SOURCE" ]; do
   APPLICATION_DIR="$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )"
 done
 APPLICATION_DIR="$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )"
-echo $APPLICATION_DIR
 
 "$JAVA_HOME/bin/java" \
 -jar $APPLICATION_DIR/spring-swing-example.jar \

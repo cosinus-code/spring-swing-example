@@ -16,6 +16,8 @@
 
 package org.cosinus.swing.example;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.cosinus.swing.app.ApplicationFrame;
 import org.cosinus.swing.boot.SpringSwingApplication;
 import org.cosinus.swing.boot.SpringSwingBootApplication;
@@ -25,6 +27,8 @@ import java.awt.*;
 
 @SpringSwingBootApplication
 public class HelloWorld extends ApplicationFrame {
+
+    private static final Logger LOG = LogManager.getLogger(HelloWorld.class);
 
     @Override
     public void initComponents() {
