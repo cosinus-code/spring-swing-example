@@ -16,15 +16,15 @@
 
 package org.cosinus.swing.example;
 
-import org.cosinus.swing.boot.ApplicationFrame;
 import org.cosinus.swing.boot.SpringSwingApplication;
 import org.cosinus.swing.boot.SpringSwingBootApplication;
+import org.cosinus.swing.boot.SwingApplicationFrame;
 
 import javax.swing.*;
 import java.awt.*;
 
 @SpringSwingBootApplication
-public class HelloWorld extends ApplicationFrame {
+public class HelloWorld extends SwingApplicationFrame {
 
     @Override
     public void initComponents() {
