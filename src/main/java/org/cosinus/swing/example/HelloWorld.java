@@ -28,6 +28,8 @@ public class HelloWorld extends SwingApplicationFrame {
 
     @Override
     public void initComponents() {
+        super.initComponents();
+
         JPanel panel = new JPanel(new BorderLayout());
         panel.add(new JLabel(translate("hello.world"), SwingConstants.CENTER));
         add(panel);
