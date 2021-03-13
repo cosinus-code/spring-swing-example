@@ -38,4 +38,8 @@ public class HelloWorld extends SwingApplicationFrame {
     public static void main(String[] args) {
         SpringSwingApplication.run(HelloWorld.class, args);
     }
+
+    @Override
+    protected void initContent() {
+    }
 }
