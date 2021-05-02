@@ -1,3 +1,8 @@
 {
-  "language": "fr_fr"
+  "appearance": {
+    "language": {
+      "type": "language",
+      "value": "fr"
+    }
+  }
 }

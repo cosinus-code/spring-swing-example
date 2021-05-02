@@ -40,6 +40,6 @@ public class HelloWorld extends SwingApplicationFrame {
     }
 
     @Override
-    protected void initContent() {
+    protected void loadContent() {
     }
 }
