@@ -1,5 +1,5 @@
 swing:
   application:
-    name: Sping Swing Example
-    icon: spring.png
+    name: @application.display.name@
+    icon: @application.icon.name@
 

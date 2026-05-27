@@ -1,9 +1,17 @@
 {
-    "menu": {
-        "start.application": "control S",
-        "quit.application": "control Q"
+  "menu": {
+    "start.application": {
+      "shortcut": "control S"
     },
-    "help": {
-        "about.application": "F1"
+    "separator-1": {},
+    "quit.application": {
+      "shortcut": "alt F4",
+      "hideOnMac": true
     }
+  },
+  "help": {
+    "about.application": {
+      "shortcut": "F1"
+    }
+  }
 }
