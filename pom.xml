@@ -15,7 +15,7 @@
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <project.output>${project.basedir}/output</project.output>
 
-        <application.display.name>SpringSwingExample</application.display.name>
+        <application.display.name>Spring Swing Example</application.display.name>
         <application.name>spring-swing-example</application.name>
         <application.description>Spring Swing Exemple</application.description>
         <application.version>${project.version}</application.version>
@@ -157,7 +157,7 @@
                                 </goals>
                                 <configuration>
                                     <mainClass>org.springframework.boot.loader.launch.JarLauncher</mainClass>
-                                    <name>${application.name}</name>
+                                    <name>${application.display.name}</name>
                                     <organizationName>${organization.name}</organizationName>
                                     <displayName>${application.display.name}</displayName>
                                     <bundleJre>false</bundleJre>
@@ -171,6 +171,9 @@
                                         <additionalResource>src/main/resources/image/${application.icon.name}
                                         </additionalResource>
                                     </additionalResources>
+                                    <extra>
+                                        <macArguments>${application.splash.progress.arguments}</macArguments>
+                                    </extra>
                                     <vmArgs>
                                         <vmArg>-Dapp.name=${application.name}</vmArg>
                                         <vmArg>-Dvisualvm.display.name=${application.name}</vmArg>
@@ -178,7 +181,7 @@
                                         <vmArg>-splash:${application.splash.file.name}</vmArg>
                                         <vmArg>-Dapple.laf.useScreenMenuBar=true</vmArg>
                                         <vmArg>
-                                            -Dcom.apple.mrj.application.apple.menu.about.name=${application.display.name}
+                                            -Dcom.apple.mrj.application.apple.menu.about.name=${application.name}
                                         </vmArg>
                                     </vmArgs>
                                     <linuxConfig>
