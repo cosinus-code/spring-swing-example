@@ -157,7 +157,7 @@
                                 </goals>
                                 <configuration>
                                     <mainClass>org.springframework.boot.loader.launch.JarLauncher</mainClass>
-                                    <name>${application.display.name}</name>
+                                    <name>${application.name}</name>
                                     <organizationName>${organization.name}</organizationName>
                                     <displayName>${application.display.name}</displayName>
                                     <bundleJre>false</bundleJre>
@@ -180,9 +180,6 @@
                                         <vmArg>-Dswing.aatext=true</vmArg>
                                         <vmArg>-splash:${application.splash.file.name}</vmArg>
                                         <vmArg>-Dapple.laf.useScreenMenuBar=true</vmArg>
-                                        <vmArg>
-                                            -Dcom.apple.mrj.application.apple.menu.about.name=${application.name}
-                                        </vmArg>
                                     </vmArgs>
                                     <linuxConfig>
                                         <pngFile>${application.icon.name}</pngFile>
