@@ -1,20 +1,15 @@
 {
   "menu": {
     "start": {
-      "shortcut": "control S",
-      "icon": "settings"
+      "shortcut": "control S"
+    },
+    "settings": {
+      "shortcut": "control P"
     },
     "separator-1": {},
     "quit": {
       "shortcut": "alt F4",
       "icon": "quit",
-      "hideOnMac": true
-    }
-  },
-  "help": {
-    "about": {
-      "shortcut": "F1",
-      "icon": "help",
       "hideOnMac": true
     }
   }

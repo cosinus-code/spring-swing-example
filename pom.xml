@@ -31,6 +31,7 @@
 
         <spring-swing.version>3.0.0-SNAPSHOT</spring-swing.version>
         <jackson.version>2.21.3</jackson.version>
+        <lombok.version>1.18.46</lombok.version>
         <java.packager.version>1.7.6</java.packager.version>
         <java.packager.mac.startup>X86_64</java.packager.mac.startup>
         <java.packager.windows.application.version>2.0.0.0</java.packager.windows.application.version>
@@ -46,6 +47,12 @@
             <groupId>com.fasterxml.jackson.dataformat</groupId>
             <artifactId>jackson-dataformat-yaml</artifactId>
             <version>${jackson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 

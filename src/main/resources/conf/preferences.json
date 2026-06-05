@@ -1,8 +1,20 @@
 {
   "appearance": {
+    "look-and-feel": {
+      "type": "laf",
+      "value": ""
+    },
     "language": {
       "type": "language",
       "value": "fr"
+    },
+    "background-color": {
+      "type": "color",
+      "value": "255,255,255"
+    },
+    "foreground-color": {
+      "type": "color",
+      "value": "0,0,0"
     }
   }
 }
