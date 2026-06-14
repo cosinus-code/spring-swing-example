@@ -10,7 +10,7 @@
     <packaging>jar</packaging>
 
     <properties>    
-        <java.version>11</java.version>
+        <java.version>21</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <project.output>${project.basedir}/output</project.output>
@@ -167,7 +167,6 @@
                                     <name>${application.name}</name>
                                     <organizationName>${organization.name}</organizationName>
                                     <displayName>${application.display.name}</displayName>
-                                    <bundleJre>false</bundleJre>
                                     <runnableJar>${project.basedir}/target/${application.name}.jar</runnableJar>
                                     <generateInstaller>true</generateInstaller>
                                     <administratorRequired>false</administratorRequired>
@@ -178,6 +177,9 @@
                                         <additionalResource>src/main/resources/image/${application.icon.name}
                                         </additionalResource>
                                     </additionalResources>
+                                    <bundleJre>true</bundleJre>
+                                    <customizedJre>false</customizedJre>
+                                    <jdkPath>C:\Program Files\Java\jdk-21</jdkPath>
                                     <extra>
                                         <macArguments>${application.splash.progress.arguments}</macArguments>
                                     </extra>
@@ -210,11 +212,9 @@
                                     </macConfig>
 
                                     <winConfig>
-                                        <icoFile>src/main/resources/image/${application.icon.name}</icoFile>
                                         <generateSetup>true</generateSetup>
                                         <generateMsi>true</generateMsi>
                                         <generateMsm>false</generateMsm>
-
                                         <headerType>gui</headerType>
                                         <wrapJar>true</wrapJar>
                                         <companyName>${organization.name}</companyName>
