@@ -24,9 +24,6 @@ import org.springframework.stereotype.Component;
 import static org.cosinus.swing.boot.SwingApplicationFrame.applicationFrame;
 import static org.cosinus.swing.image.icon.IconProvider.ICON_SETTINGS;
 
-/**
- * Start draw action
- */
 @Component
 public class EditPreferencesAction implements SwingAction {
 
