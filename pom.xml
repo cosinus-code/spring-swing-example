@@ -21,6 +21,7 @@
         <application.version>${project.version}</application.version>
         <application.category>Other</application.category>
         <application.icon.name>spring-swing-example.png</application.icon.name>
+        <application.ico.name>spring-swing-example.ico</application.ico.name>
         <application.icns.name>spring.icns</application.icns.name>
         <application.class>org.cosinus.swing.example.HelloWorld</application.class>
         <application.home.env.name>SPRING_SWING_EXAMPLE_HOME</application.home.env.name>
@@ -212,6 +213,7 @@
                                     </macConfig>
 
                                     <winConfig>
+                                        <icoFile>src/main/resources/image/${application.ico.name}</icoFile>
                                         <generateSetup>true</generateSetup>
                                         <generateMsi>true</generateMsi>
                                         <generateMsm>false</generateMsm>
